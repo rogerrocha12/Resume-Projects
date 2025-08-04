@@ -63,34 +63,14 @@ button,
   border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
 }
 
 button:hover,
 .github-btn:hover {
   background-color: #0366d6;
   transform: translateY(-2px);
-}
-
-#music {
-  background-color: #add8e6;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-#music h3 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  color: #24292e;
-}
-
-#music iframe {
-  border: none;
-  border-radius: 22px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 }
 
 .github-button-row {
@@ -103,6 +83,33 @@ button:hover,
   max-width: 100%;
   width: fit-content;
 }
+
+/* 🔥 NEW: Project Cards with Images + Buttons */
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  width: 480px;           
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 input {
   margin: 5px;
