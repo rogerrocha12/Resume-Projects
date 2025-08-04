@@ -127,3 +127,48 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/* ==== Slider Container ==== */
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* ==== Individual Slide ==== */
+.slide {
+  display: none;
+  text-align: center;
+}
+
+/* ==== Slide Image Styling ==== */
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ==== Show Active Slide ==== */
+.active {
+  display: block;
+}
+
+/* ==== Navigation Buttons ==== */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  font-size: 2rem;
+  user-select: none;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
