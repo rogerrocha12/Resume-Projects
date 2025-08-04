@@ -1,0 +1,122 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #24292e;
+}
+
+header {
+  background: #24292e;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #24292e;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #87ceeb;
+  border-bottom: 2px solid #87ceeb;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 10px 0;
+}
+
+button,
+.github-btn {
+  padding: 0.7rem 1.5rem;
+  margin: 5px;
+  background-color: #24292e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover,
+.github-btn:hover {
+  background-color: #0366d6;
+  transform: translateY(-2px);
+}
+
+#music {
+  background-color: #add8e6;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#music h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #24292e;
+}
+
+#music iframe {
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+}
+
+.github-button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  margin: 4rem auto;
+  max-width: 100%;
+  width: fit-content;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
