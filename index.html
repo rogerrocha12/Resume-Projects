@@ -1,99 +1,112 @@
-<!-- Font and Style Links -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Serif+Text:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roger Rocha-Claros | Portfolio</title>
 
-<!-- Header -->
-<header>
-  <h1>Roger Rocha-Claros</h1>
-  <p style="letter-spacing: 2px; font-weight: bold;">
-    B.S. MATHEMATICAL SCIENCES – APPLIED MATHEMATICS | DATA ANALYTICS GRADUATE STUDENT
-  </p>
+  <!-- Font and Style Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Serif+Text:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Roger Rocha-Claros</h1>
+    <p style="letter-spacing: 2px; font-weight: bold;">
+      B.S. MATHEMATICAL SCIENCES – APPLIED MATHEMATICS | DATA ANALYTICS GRADUATE STUDENT
+    </p>
     <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-  </nav>
-</header>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
 
-<!-- About Section -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I recently earned my B.S. in Mathematical Sciences with a concentration in Applied Mathematics from Virginia Commonwealth University. I'm now continuing my education as a graduate student in Data Analytics at George Mason University. I'm passionate about applying math and programming to solve real-world problems and enjoy working on data-driven projects and interactive tools.
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I recently earned my B.S. in Mathematical Sciences with a concentration in Applied Mathematics from Virginia Commonwealth University. I'm now continuing my education as a graduate student in Data Analytics at George Mason University. I'm passionate about applying math and programming to solve real-world problems and enjoy working on data-driven projects and interactive tools.
+    </p>
+  </section>
 
-  </p>
-</section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>MATLAB</li>
+    </ul>
+  </section>
 
-<!-- Skills Section -->
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML / CSS</li>
-    <li>JavaScript</li>
-    <li>Python</li>
-    <li>MATLAB</li>
-  </ul>
-</section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>School & Personal Projects</h2>
 
-<!-- Projects Section -->
-<section id="projects">
-  <h2>School & Personal Projects</h2>
-
-  <!--Pdf viewer for capstone project-->
-  <a href="presentation.pdf" target="_blank" rel="noopener" class="button">
-  View Presentation (PDF)
-</a>
-
-
-  <!-- GitHub Projects -->
-  <div class="project-gallery">
-
-    <div class="project-card">
-      <img src="Images/dad-jokes.png" alt="Dad Jokes App" class="project-img">
-      <a class="github-btn" href="https://github.com/rogerrocha12/Dad-Jokes/tree/dev" target="_blank">Dad Jokes Web App</a>
+    <!-- PDF Viewer for Capstone Project -->
+    <div class="pdf-viewer">
+      <h3>Capstone Presentation</h3>
+      <iframe src="presentation.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+      <p>
+        <a href="presentation.pdf" target="_blank" rel="noopener">Open full PDF in new tab</a>
+      </p>
     </div>
-  
-    <div class="project-card">
-      <img src="Images/piano-app.png" alt="Build A Piano App" class="project-img">
-      <a class="github-btn" href="https://github.com/rogerrocha12/Build-A-Piano/tree/dev" target="_blank">Interactive Piano</a>
-    </div>
-  
-    <div class="project-card">
-      <img src="Images/video-player.png" alt="Video Player" class="project-img">
-      <a class="github-btn" href="https://github.com/rogerrocha12/CREA-330-Custom-Video-Player/tree/dev" target="_blank">Custom Video Player</a>
-    </div>
-  
-    <div class="project-card">
-      <img src="Images/chrome-extension.png" alt="Chrome Extension" class="project-img">
-      <a class="github-btn" href="https://github.com/rogerrocha12/Chrome-Extension-Project/tree/dev" target="_blank">Chrome Extension Tool</a>
-    </div>
-  
-  </div>
-  
 
-  <!-- Calculator Tool -->
-  <h3>Simple Calculator Tool</h3>
-  <input id="num1" type="number" placeholder="First number">
-  <input id="num2" type="number" placeholder="Second number"><br><br>
-  <button onclick="calc('+')">+</button>
-  <button onclick="calc('-')">−</button>
-  <button onclick="calc('*')">×</button>
-  <button onclick="calc('/')">÷</button>
-  <p id="result">Result: </p>
-  <p>Total Page Clicks: <span id="clickCount">0</span></p>
+    <!-- GitHub Projects -->
+    <div class="project-gallery">
 
-  <!-- Random Fact Generator -->
-  <div id="fun-fact-box">
-    <h3>Random Fact Generator</h3>
-    <p id="fact">Click the button to get a random fact!</p>
-    <button onclick="showRandomFact()">New Random Fact</button>
-  </div>
-</section>
+      <div class="project-card">
+        <img src="Images/dad-jokes.png" alt="Dad Jokes App" class="project-img">
+        <a class="github-btn" href="https://github.com/rogerrocha12/Dad-Jokes/tree/dev" target="_blank">Dad Jokes Web App</a>
+      </div>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Roger Rocha-Claros | Personal & Academic Projects</p>
-</footer>
+      <div class="project-card">
+        <img src="Images/piano-app.png" alt="Build A Piano App" class="project-img">
+        <a class="github-btn" href="https://github.com/rogerrocha12/Build-A-Piano/tree/dev" target="_blank">Interactive Piano</a>
+      </div>
+
+      <div class="project-card">
+        <img src="Images/video-player.png" alt="Video Player" class="project-img">
+        <a class="github-btn" href="https://github.com/rogerrocha12/CREA-330-Custom-Video-Player/tree/dev" target="_blank">Custom Video Player</a>
+      </div>
+
+      <div class="project-card">
+        <img src="Images/chrome-extension.png" alt="Chrome Extension" class="project-img">
+        <a class="github-btn" href="https://github.com/rogerrocha12/Chrome-Extension-Project/tree/dev" target="_blank">Chrome Extension Tool</a>
+      </div>
+
+    </div>
+
+    <!-- Calculator Tool -->
+    <h3>Simple Calculator Tool</h3>
+    <input id="num1" type="number" placeholder="First number">
+    <input id="num2" type="number" placeholder="Second number"><br><br>
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">−</button>
+    <button onclick="calc('*')">×</button>
+    <button onclick="calc('/')">÷</button>
+    <p id="result">Result: </p>
+    <p>Total Page Clicks: <span id="clickCount">0</span></p>
+
+    <!-- Random Fact Generator -->
+    <div id="fun-fact-box">
+      <h3>Random Fact Generator</h3>
+      <p id="fact">Click the button to get a random fact!</p>
+      <button onclick="showRandomFact()">New Random Fact</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Roger Rocha-Claros | Personal & Academic Projects</p>
+  </footer>
+
+</body>
+</html>
