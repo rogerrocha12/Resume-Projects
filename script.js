@@ -7,6 +7,33 @@ document
     this.reset();
   });
 
+  document.addEventListener("DOMContentLoaded", () => {
+  // ==== Initialize variables ====
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+
+   // ==== Function to show a specific slide ====
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  // ==== Change slide based on direction (+1 or -1) ====
+  function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+  }
+
+  // ==== Event listeners for navigation buttons ====
+  if (prevButton && nextButton) {
+    prevButton.addEventListener('click', () => changeSlide(-1));
+    nextButton.addEventListener('click', () => changeSlide(1));
+  }
+
+  });
+
 function calc(op) {
   let a = parseFloat(document.getElementById("num1").value);
   let b = parseFloat(document.getElementById("num2").value);
@@ -80,3 +107,4 @@ async function showRandomFact() {
     console.error("Fetch error:", error);
   }
 }
+
