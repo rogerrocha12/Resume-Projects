@@ -32,6 +32,20 @@ document
     nextButton.addEventListener('click', () => changeSlide(1));
   }
 
+
+  // ==== Featured report badge (first project) ====
+  const featured = document.getElementById("featured-report");
+  if (featured) {
+    featured.classList.add("featured");
+    const title = featured.querySelector("h3");
+    if (title && !title.querySelector(".badge")) {
+      const badge = document.createElement("span");
+      badge.className = "badge";
+      badge.textContent = "FEATURED";
+      title.appendChild(badge);
+    }
+  }
+
   });
 
 function calc(op) {
